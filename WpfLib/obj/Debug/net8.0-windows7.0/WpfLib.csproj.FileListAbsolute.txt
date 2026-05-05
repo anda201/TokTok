@@ -1,0 +1,11 @@
+C:\Users\adj00\OneDrive\Desktop\학습자료\[유튜브]WPF_까불이톡\TokTok\WpfLib\bin\Debug\net8.0-windows7.0\WpfLib.deps.json
+C:\Users\adj00\OneDrive\Desktop\학습자료\[유튜브]WPF_까불이톡\TokTok\WpfLib\bin\Debug\net8.0-windows7.0\WpfLib.dll
+C:\Users\adj00\OneDrive\Desktop\학습자료\[유튜브]WPF_까불이톡\TokTok\WpfLib\bin\Debug\net8.0-windows7.0\WpfLib.pdb
+C:\Users\adj00\OneDrive\Desktop\학습자료\[유튜브]WPF_까불이톡\TokTok\WpfLib\obj\Debug\net8.0-windows7.0\WpfLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adj00\OneDrive\Desktop\학습자료\[유튜브]WPF_까불이톡\TokTok\WpfLib\obj\Debug\net8.0-windows7.0\WpfLib.AssemblyInfoInputs.cache
+C:\Users\adj00\OneDrive\Desktop\학습자료\[유튜브]WPF_까불이톡\TokTok\WpfLib\obj\Debug\net8.0-windows7.0\WpfLib.AssemblyInfo.cs
+C:\Users\adj00\OneDrive\Desktop\학습자료\[유튜브]WPF_까불이톡\TokTok\WpfLib\obj\Debug\net8.0-windows7.0\WpfLib.csproj.CoreCompileInputs.cache
+C:\Users\adj00\OneDrive\Desktop\학습자료\[유튜브]WPF_까불이톡\TokTok\WpfLib\obj\Debug\net8.0-windows7.0\WpfLib.dll
+C:\Users\adj00\OneDrive\Desktop\학습자료\[유튜브]WPF_까불이톡\TokTok\WpfLib\obj\Debug\net8.0-windows7.0\refint\WpfLib.dll
+C:\Users\adj00\OneDrive\Desktop\학습자료\[유튜브]WPF_까불이톡\TokTok\WpfLib\obj\Debug\net8.0-windows7.0\WpfLib.pdb
+C:\Users\adj00\OneDrive\Desktop\학습자료\[유튜브]WPF_까불이톡\TokTok\WpfLib\obj\Debug\net8.0-windows7.0\ref\WpfLib.dll
