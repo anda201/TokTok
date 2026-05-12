@@ -2,6 +2,7 @@
 using System.Configuration;
 using System.Data;
 using System.Windows;
+using TokTok.ViewModels;
 using TokTok.Views;
 
 namespace TokTok
@@ -29,6 +30,12 @@ namespace TokTok
         private static IServiceProvider ConfigureServices()
         {
             var services = new ServiceCollection();
+
+            //ViewModels
+            services.AddTransient<MainViewModel>();
+            services.AddTransient<LoginControlViewModel>();
+            services.AddTransient<SignupControlViewModel>();
+            services.AddTransient<ChangePwdControlViewModel>();
 
             //Services
 

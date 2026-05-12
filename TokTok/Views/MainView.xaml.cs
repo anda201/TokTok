@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TokTok.ViewModels;
 
 namespace TokTok.Views
 {
@@ -22,6 +23,7 @@ namespace TokTok.Views
         public MainView()
         {
             InitializeComponent();
+            DataContext = App.Current.Services.GetService(typeof(MainViewModel));
         }
     }
 }

@@ -3,10 +3,29 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TokTok.Views" xmlns:controls="clr-namespace:TokTok.Controls"
+        xmlns:local="clr-namespace:TokTok.Views" 
+        xmlns:controls="clr-namespace:TokTok.Controls"
+        xmlns:vm="clr-namespace:TokTok.ViewModels"
         mc:Ignorable="d"
         WindowStyle="None"
         Title="MainView" Height="550" Width="350">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:LoginControlViewModel}">
+            <!--view model-->
+            <!--view-->
+            <controls:LoginControl/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:ChangePwdControlViewModel}">
+            <!--view model-->
+            <!--view-->
+            <controls:ChangePwdControl/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:SignupControlViewModel}">
+            <!--view model-->
+            <!--view-->
+            <controls:SignupControl/>
+        </DataTemplate>
+    </Window.Resources>
     <WindowChrome.WindowChrome>
         <WindowChrome
             CaptionHeight="20"
@@ -14,16 +33,31 @@
             />
     </WindowChrome.WindowChrome>
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <!-- Title Bar -->
-        <controls:TitleBar/>
+        <controls:TitleBar Grid.ColumnSpan="2" Margin="0,0,0,512" Grid.RowSpan="2"/>
 
         <!-- Content Area -->
-        <StackPanel Grid.Row="1" Background="Red"/>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
 
+            <ContentControl Content="{Binding CurrentViewModel}"/>
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <Button Content="로그인" Command="{Binding ToLoginCommand}"/>
+                <Button Content="비밀번호 변경" Command="{Binding ToChangePwdCommand}"/>
+                <Button Content="회원가입" Command="{Binding ToSignupCommand}"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
