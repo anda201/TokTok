@@ -16,13 +16,9 @@
             <controls:LoginControl/>
         </DataTemplate>
         <DataTemplate DataType="{x:Type vm:ChangePwdControlViewModel}">
-            <!--view model-->
-            <!--view-->
             <controls:ChangePwdControl/>
         </DataTemplate>
         <DataTemplate DataType="{x:Type vm:SignupControlViewModel}">
-            <!--view model-->
-            <!--view-->
             <controls:SignupControl/>
         </DataTemplate>
     </Window.Resources>
@@ -33,20 +29,16 @@
             />
     </WindowChrome.WindowChrome>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="19*"/>
-            <ColumnDefinition Width="6*"/>
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!-- Title Bar -->
-        <controls:TitleBar Grid.ColumnSpan="2" Margin="0,0,0,512" Grid.RowSpan="2"/>
+        <controls:TitleBar />
 
         <!-- Content Area -->
-        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+        <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition Height="20"/>
