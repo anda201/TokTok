@@ -45,7 +45,6 @@
             <controls:PasswordBoxControl Height="{StaticResource ElementHeight}"
                                          Background="White"
                                          WaterMarkText="비밀번호를 입력하세요."
-                                         Validating="False"
                                          />
             <Button Content="Login" 
                     Height="{StaticResource ElementHeight}"

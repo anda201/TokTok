@@ -53,11 +53,6 @@ namespace WpfLib.Controls
 
 
         #region Public Properties
-        public bool Validating
-        {
-            get { return (bool)GetValue(ValidatingProperty); }
-            set { SetValue(ValidatingProperty, value); }
-        }
         public new Brush BorderBrush
         {
             get { return (Brush)GetValue(BorderBrushProperty); }
